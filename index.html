@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/0b0d5f5455.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+          <li>
+            <div class="home-icon">
+                <i class="fa-solid fa-house"></i>
+              </div>
+              
+            </div>
+          </li>
+          <li>
+            <div class="about-icon">
+                <i class="fa-solid fa-circle-question"></i>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="work-icon">
+                <i class="fa-solid fa-list"></i>
+            </div>
+          </li>
+          <li>
+          
+        </ul>
+      </nav>
+
+
+    <section class="main">
+
+        <img src="img/logo.png" alt="">
+
+        <h1>CoC statistic</h1>
+
+        <button>Statistiky</button>
+
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $('.navTrigger').click(function () {
+            $(this).toggleClass('active');
+            console.log("Clicked menu");
+            $("#mainListDiv").toggleClass("show_list");
+            $("#mainListDiv").fadeIn();
+
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,227 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:after {
+  content: "";
+}
+
+nav {
+  display: none;
+  z-index: 99999;
+  float: left;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: transparent;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+nav ul {
+  text-align: center;
+  list-style-type: none;
+}
+
+nav ul li {
+  position: relative;
+  width: 70px;
+  cursor: pointer;
+  background: #39c951;
+  text-transform: uppercase;
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+  list-style-type: none;
+}
+
+nav ul li:after {
+  position: absolute;
+  background: white;
+  color: #39c951;
+  top: 0;
+  left: 70px;
+  width: 70px;
+  height: 100%;
+  opacity: .5;
+  -webkit-transform: perspective(400px) rotateY(90deg);
+          transform: perspective(400px) rotateY(90deg);
+  -webkit-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+}
+
+nav ul li:nth-child(1):after {
+  content: "Home";
+  line-height: 88px;
+}
+
+nav ul li:nth-child(2):after {
+  content: "About";
+  line-height: 88px;
+}
+
+nav ul li:nth-child(3):after {
+  content: "Work";
+  line-height: 85px;
+}
+
+nav ul li:nth-child(4):after {
+  content: "Say hi";
+  line-height: 70px;
+}
+
+nav ul li:hover {
+  -webkit-transform: translateX(-70px);
+          transform: translateX(-70px);
+}
+
+nav ul li:hover:after {
+  opacity: 1;
+  -webkit-transform: perspective(400px) rotateY(0deg) scale(1);
+          transform: perspective(400px) rotateY(0deg) scale(1);
+}
+
+nav ul li > div {
+  display: inline-block;
+  padding: 25px 0;
+  background: transparent;
+}
+
+nav ul li div {
+  position: relative;
+}
+
+.faq {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.faq h1 {
+  color: black;
+  font-size: 2em;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.table {
+  width: 90%;
+  border-collapse: collapse;
+}
+
+.table td, .table th {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 16px;
+}
+
+.table th {
+  background-color: darkblue;
+  color: #ffffff;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #bbbbbb;
+}
+
+/*responsive*/
+@media (max-width: 500px) {
+  .table thead {
+    display: none;
+  }
+  .table, .table tbody, .table tr, .table td {
+    display: block;
+    width: 100%;
+  }
+  .table tr {
+    margin-bottom: 15px;
+  }
+  .table td {
+    text-align: right;
+    padding-left: 50%;
+    text-align: right;
+    position: relative;
+  }
+  .table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/bck.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.main img {
+  width: 100px;
+}
+
+.main h1 {
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  font-size: 2em;
+}
+
+.main button {
+  font-size: 1.5em;
+  padding: 0.5em;
+  background: none;
+  border: 2px solid white;
+  color: white;
+  border-radius: 15px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.main button:hover {
+  border: 2px solid #42af42;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/*# sourceMappingURL=style.css.map */
