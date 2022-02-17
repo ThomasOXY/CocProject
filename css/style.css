@@ -152,6 +152,7 @@ nav ul li div {
   }
   .table tr {
     margin-bottom: 15px;
+    border-bottom: 3px solid black;
   }
   .table td {
     text-align: right;

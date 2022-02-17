@@ -21,6 +21,7 @@
 .table{
 	width: 90%;
 	border-collapse: collapse;
+	
 }
 
 .table td,.table th{
@@ -44,14 +45,17 @@
 @media(max-width: 500px){
 	.table thead{
 		display: none;
+		
 	}
 
 	.table, .table tbody, .table tr, .table td{
 		display: block;
 		width: 100%;
+		
 	}
 	.table tr{
 		margin-bottom:15px;
+		border-bottom: 3px solid black;
 	}
 	.table td{
 		text-align: right;
